@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Takdang Aksyon 1.0</title>
+        <!-- External style sheet -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <main>
+            <section id="todo">
+                <div id="todo-content" class="container card">
+                    <h1>Takdang Aksyon 1.0</h1>
+                    <div id="todo-form">
+                        <input id="todo-val" type="text" name="todo" class="todo-input" placeholder="Enter your task here...">
+                        <button id="add-task" class="btn btn-primary btn-md" type="button">Add</button> 
+                    </div>
+                    <div id="todo-category">
+                        <label for="category">Pick a category:</label>
+                        <select name="category" id="category">
+                            <option value="none" selected>None</option>
+                            <option value="urgent">Urgent</option>
+                            <option value="important">Important</option>
+                            <option value="later">For Later</option>
+                        </select>
+                    </div>
+                    <div id="todo-container">
+                        <ul id="todo-list">
+                            <li class="todo-item">
+                                <span class="todo-description">
+                                    <input type="checkbox" class="todo-checkbox"> Do laundry
+                                </span>
+                                <span class="todo-action">
+                                    <button class="btn btn-sm btn-secondary btn-remove">Remove</button>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="js/script.js"></script>
+    </body>
+</html>
